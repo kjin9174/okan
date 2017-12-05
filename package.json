@@ -9,8 +9,8 @@
     "umd"
   ],
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --port 3000 --config webpack.config.dev.js --content-base demo/",
-    "build": "babel src -d lib --copy-files",
+    "start": "webpack-dev-server --config webpack.config.dev.js --content-base demo/",
+    "build": "webpack --progress --config webpack.config.js",
     "clean": "rimraf dist",
     "clean-build": "rimraf lib",
     "clean-umd": "rimraf umd",
